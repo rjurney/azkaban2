@@ -33,6 +33,7 @@ import azkaban.flow.CommonJobProperties;
 
 import org.apache.commons.lang.StringUtils;
 import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
 
 import javax.print.attribute.standard.DateTimeAtCompleted;
 
@@ -225,6 +226,7 @@ public class PropsUtils {
         DateTime weekAgo = loadTime.minusWeeks(1);
         DateTime monthAgo = loadTime.minusMonths(1);
         DateTime yearAgo = loadTime.minusYears(1);
+        DateTime utcHourAgo = hourAgo.toDateTime(DateTimeZone.UTC);
 
 		props.put(CommonJobProperties.FLOW_START_TIMESTAMP, loadTime.toString());
 		props.put(CommonJobProperties.FLOW_START_YEAR, loadTime.toString("yyyy"));
@@ -286,7 +288,27 @@ public class PropsUtils {
         props.put(CommonJobProperties.FLOW_BACK_ONE_YEAR_MILLISSECOND, yearAgo.toString("SSS"));
         props.put(CommonJobProperties.FLOW_BACK_ONE_YEAR_TIMEZONE, yearAgo.toString("ZZZZ"));
 
-		return props;
+        props.put(CommonJobProperties.UTC_BACK_ONE_HOUR_TIMESTAMP, hourAgo.toString());
+        props.put(CommonJobProperties.UTC_BACK_ONE_HOUR_YEAR, hourAgo.toString("yyyy"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_HOUR_MONTH, hourAgo.toString("MM"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_HOUR_DAY, hourAgo.toString("dd"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_HOUR_HOUR, hourAgo.toString("HH"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_HOUR_MINUTE, hourAgo.toString("mm"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_HOUR_SECOND, hourAgo.toString("ss"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_HOUR_MILLISSECOND, hourAgo.toString("SSS"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_HOUR_TIMEZONE, hourAgo.toString("ZZZZ"));
+
+        props.put(CommonJobProperties.UTC_BACK_ONE_DAY_TIMESTAMP, hourAgo.toString());
+        props.put(CommonJobProperties.UTC_BACK_ONE_DAY_YEAR, hourAgo.toString("yyyy"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_DAY_MONTH, hourAgo.toString("MM"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_DAY_DAY, hourAgo.toString("dd"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_DAY_HOUR, hourAgo.toString("HH"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_DAY_MINUTE, hourAgo.toString("mm"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_DAY_SECOND, hourAgo.toString("ss"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_DAY_MILLISSECOND, hourAgo.toString("SSS"));
+        props.put(CommonJobProperties.UTC_BACK_ONE_DAY_TIMEZONE, hourAgo.toString("ZZZZ"));
+
+        return props;
 	}
 
 	public static String toJSONString(Props props, boolean localOnly) {

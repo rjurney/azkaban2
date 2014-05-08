@@ -175,4 +175,24 @@ public class CommonJobProperties {
     public static final String FLOW_BACK_ONE_YEAR_SECOND = "azkaban.flow.one.year.back.second";
     public static final String FLOW_BACK_ONE_YEAR_MILLISSECOND = "azkaban.flow.one.year.back.milliseconds";
     public static final String FLOW_BACK_ONE_YEAR_TIMEZONE = "azkaban.flow.one.year.back.timezone";
+
+    public static final String UTC_BACK_ONE_HOUR_TIMESTAMP = "azkaban.utc.one.hour.back.timestamp";
+    public static final String UTC_BACK_ONE_HOUR_YEAR = "azkaban.utc.one.hour.back.year";
+    public static final String UTC_BACK_ONE_HOUR_MONTH = "azkaban.utc.one.hour.back.month";
+    public static final String UTC_BACK_ONE_HOUR_DAY = "azkaban.utc.one.hour.back.day";
+    public static final String UTC_BACK_ONE_HOUR_HOUR = "azkaban.utc.one.hour.back.hour";
+    public static final String UTC_BACK_ONE_HOUR_MINUTE = "azkaban.utc.one.hour.back.minute";
+    public static final String UTC_BACK_ONE_HOUR_SECOND = "azkaban.utc.one.hour.back.second";
+    public static final String UTC_BACK_ONE_HOUR_MILLISSECOND = "azkaban.utc.one.hour.back.milliseconds";
+    public static final String UTC_BACK_ONE_HOUR_TIMEZONE = "azkaban.utc.one.hour.back.timezone";
+
+    public static final String UTC_BACK_ONE_DAY_TIMESTAMP = "azkaban.utc.one.day.back.timestamp";
+    public static final String UTC_BACK_ONE_DAY_YEAR = "azkaban.utc.one.day.back.year";
+    public static final String UTC_BACK_ONE_DAY_MONTH = "azkaban.utc.one.day.back.month";
+    public static final String UTC_BACK_ONE_DAY_DAY = "azkaban.utc.one.day.back.day";
+    public static final String UTC_BACK_ONE_DAY_HOUR = "azkaban.utc.one.day.back.hour";
+    public static final String UTC_BACK_ONE_DAY_MINUTE = "azkaban.utc.one.day.back.minute";
+    public static final String UTC_BACK_ONE_DAY_SECOND = "azkaban.utc.one.day.back.second";
+    public static final String UTC_BACK_ONE_DAY_MILLISSECOND = "azkaban.utc.one.day.back.milliseconds";
+    public static final String UTC_BACK_ONE_DAY_TIMEZONE = "azkaban.utc.one.day.back.timezone";
 }
