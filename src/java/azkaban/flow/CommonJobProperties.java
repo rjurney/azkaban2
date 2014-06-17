@@ -112,6 +112,11 @@ public class CommonJobProperties {
 	 * A uuid assigned to every execution
 	 */
 	public static final String FLOW_UUID = "azkaban.flow.uuid";
+
+    /**
+     * Max memory size
+     */
+    public static final String MAX_MEMORY_SIZE = "azkaban.flow.maxmemorysize";
 	
 	/**
 	 * Properties for passing the flow start time to the jobs.
@@ -176,23 +181,13 @@ public class CommonJobProperties {
     public static final String FLOW_BACK_ONE_YEAR_MILLISSECOND = "azkaban.flow.one.year.back.milliseconds";
     public static final String FLOW_BACK_ONE_YEAR_TIMEZONE = "azkaban.flow.one.year.back.timezone";
 
-    public static final String UTC_BACK_ONE_HOUR_TIMESTAMP = "azkaban.utc.one.hour.back.timestamp";
-    public static final String UTC_BACK_ONE_HOUR_YEAR = "azkaban.utc.one.hour.back.year";
-    public static final String UTC_BACK_ONE_HOUR_MONTH = "azkaban.utc.one.hour.back.month";
-    public static final String UTC_BACK_ONE_HOUR_DAY = "azkaban.utc.one.hour.back.day";
-    public static final String UTC_BACK_ONE_HOUR_HOUR = "azkaban.utc.one.hour.back.hour";
-    public static final String UTC_BACK_ONE_HOUR_MINUTE = "azkaban.utc.one.hour.back.minute";
-    public static final String UTC_BACK_ONE_HOUR_SECOND = "azkaban.utc.one.hour.back.second";
-    public static final String UTC_BACK_ONE_HOUR_MILLISSECOND = "azkaban.utc.one.hour.back.milliseconds";
-    public static final String UTC_BACK_ONE_HOUR_TIMEZONE = "azkaban.utc.one.hour.back.timezone";
-
-    public static final String UTC_BACK_ONE_DAY_TIMESTAMP = "azkaban.utc.one.day.back.timestamp";
-    public static final String UTC_BACK_ONE_DAY_YEAR = "azkaban.utc.one.day.back.year";
-    public static final String UTC_BACK_ONE_DAY_MONTH = "azkaban.utc.one.day.back.month";
-    public static final String UTC_BACK_ONE_DAY_DAY = "azkaban.utc.one.day.back.day";
-    public static final String UTC_BACK_ONE_DAY_HOUR = "azkaban.utc.one.day.back.hour";
-    public static final String UTC_BACK_ONE_DAY_MINUTE = "azkaban.utc.one.day.back.minute";
-    public static final String UTC_BACK_ONE_DAY_SECOND = "azkaban.utc.one.day.back.second";
-    public static final String UTC_BACK_ONE_DAY_MILLISSECOND = "azkaban.utc.one.day.back.milliseconds";
-    public static final String UTC_BACK_ONE_DAY_TIMEZONE = "azkaban.utc.one.day.back.timezone";
+    public static final String FLOW_BACK_TWO_DAY_TIMESTAMP = "azkaban.flow.two.day.back.timestamp";
+    public static final String FLOW_BACK_TWO_DAY_YEAR = "azkaban.flow.two.day.back.year";
+    public static final String FLOW_BACK_TWO_DAY_MONTH = "azkaban.flow.two.day.back.month";
+    public static final String FLOW_BACK_TWO_DAY_DAY = "azkaban.flow.two.day.back.day";
+    public static final String FLOW_BACK_TWO_DAY_HOUR = "azkaban.flow.two.day.back.hour";
+    public static final String FLOW_BACK_TWO_DAY_MINUTE = "azkaban.flow.two.day.back.minute";
+    public static final String FLOW_BACK_TWO_DAY_SECOND = "azkaban.flow.two.day.back.second";
+    public static final String FLOW_BACK_TWO_DAY_MILLISSECOND = "azkaban.flow.two.day.back.milliseconds";
+    public static final String FLOW_BACK_TWO_DAY_TIMEZONE = "azkaban.flow.two.day.back.timezone";
 }
